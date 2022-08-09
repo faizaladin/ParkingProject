@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.MyReservations" Title="Dashboard">
+    <StackLayout>
+        <ScrollView>
+             <ListView x:Name="ReservationView" HeightRequest="400" Margin="20,40,20,10" ItemsSource="{Binding _reservations}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                         <SwipeItem Text="Edit" BackgroundColor="Blue" Invoked = "OnEdit"/>
+                                         <SwipeItem Text="Delete" BackgroundColor="Red" Invoked="OnDelete"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <Grid HeightRequest="60" WidthRequest="250" BackgroundColor="LightGray">
+                                    <Label Text="{Binding displayname}" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+                                </Grid>
+                            </SwipeView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+             </ListView>
+        </ScrollView>
+        <Button x:Name="MakeRes" Text="Make a Reservation" Clicked="clicked" BackgroundColor="#7B7B7C" TextColor="White" CornerRadius="10" WidthRequest="350" HorizontalOptions="Center"/>
+    </StackLayout>
+    
+</ContentPage>

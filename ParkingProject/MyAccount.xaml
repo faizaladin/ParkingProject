@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.MyAccount" Title="My Account">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <StackLayout Orientation="Horizontal"
+            HorizontalOptions="Center" VerticalOptions="Center">
+
+            <StackLayout>
+                <Label Text="Name: "/>
+                <Label Text="Email: "/>
+                <Label Text="Cellphone Number: "/>
+            </StackLayout>
+
+            <Frame HasShadow="False"/>
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="First"/>
+                    <Label x:Name="Last"/>
+                </StackLayout>
+                <Label x:Name="ID"/>
+                <Label x:Name="Cell"/>
+            </StackLayout>
+    </StackLayout>
+        <Frame HasShadow="False"/>
+        <Button x:Name="gotoUpdate" BackgroundColor="#7B7B7C" TextColor="White" Text="Update Information" Clicked="updateInfo" CornerRadius="10"/>
+    </StackLayout>
+    
+
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             Shell.BackgroundColor="Black"
+             x:Class="ParkingProject.MainPage" Title="Williams-Sonoma Parking">
+
+   <StackLayout Padding="10,170,10,0">
+       <Button Text="Log In" Clicked="goToLogin" BackgroundColor="#7B7B7C" TextColor="White" CornerRadius="10" />
+       <Label Padding="10"/>
+       <Button Text="Sign Up" Clicked="goToSignup" BackgroundColor="#7B7B7C" TextColor="White" CornerRadius="10"/>
+    </StackLayout>
+
+</ContentPage>

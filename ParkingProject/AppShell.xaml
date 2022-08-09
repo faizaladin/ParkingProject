@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ParkingProject"
+    x:Class="ParkingProject.AppShell">
+
+
+     <TabBar>
+        <ShellContent Route = "MainPage" Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:MainPage}"/>
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route = "Login" Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:Login}"/>
+    </TabBar>
+
+    <TabBar>
+         <ShellContent Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:SignupPage}"/>
+    </TabBar>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Route="UserPage" Title="Dashboard" Icon="dashboard.png" ContentTemplate="{DataTemplate local:MyReservations}"/>
+        <ShellContent Route="ManageSpot" Title="Manage Spot" Icon="car.png" ContentTemplate="{DataTemplate local:ManageSpot}"/>
+        <ShellContent Route="MyAccount" Title="My Account" Icon= "myaccount.png" ContentTemplate="{DataTemplate local:MyAccount}"/>
+        <ShellContent Route="Waitlist" Title="Waitlist" Icon="waitlist.png" ContentTemplate="{DataTemplate local:Waitlist}"/>
+    </FlyoutItem>
+
+    <TabBar>
+         <ShellContent Route = "MakeRes" Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:MakeRes}"/>
+    </TabBar>
+
+    <TabBar>
+         <ShellContent Route = "ChangeRes" Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:ChangeRes}"/>
+    </TabBar>
+
+    <TabBar>
+         <ShellContent Route = "Spots" Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:Spots}"/>
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route= "ManageSpot" Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:ManageSpot}"/>
+    </TabBar>
+    
+    <MenuItem Text="Logout" IconImageSource="Logout.png" Clicked="logout"/>
+
+
+</Shell>

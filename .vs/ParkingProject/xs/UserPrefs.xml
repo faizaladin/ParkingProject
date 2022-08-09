@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{C9FB1A31-B440-402D-BB25-8E3E551451B1}|Default">
+  <MonoDevelop.Ide.ItemProperties.ParkingProject.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E9829BE0-4B43-434F-94F0-7D5BD3568D00" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParkingProject/ManageSpot.xaml.cs">
+    <Files>
+      <File FileName="ParkingProject/GlobalData/mysqlStrings.cs" Line="18" Column="1" />
+      <File FileName="ParkingProject/Login.xaml" Line="9" Column="95" />
+      <File FileName="ParkingProject/ManageSpot.xaml.cs" Line="303" Column="43" />
+      <File FileName="ParkingProject/ManageSpot.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ParkingProject" expanded="True">
+            <Node name="ParkingProject" expanded="True">
+              <Node name="GlobalData" expanded="True" />
+              <Node name="ManageSpot.xaml" expanded="True">
+                <Node name="ManageSpot.xaml.cs" selected="True" />
+              </Node>
+              <Node name="Waitlist.xaml" expanded="True" />
+            </Node>
+            <Node name="ParkingProject.Android" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ParkingProject.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

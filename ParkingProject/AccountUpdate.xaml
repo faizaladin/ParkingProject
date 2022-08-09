@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.AccountUpdate" Title="Update Your Information">
+
+    <StackLayout Padding="10,10,10,0">
+        <Label x:Name="message" HorizontalOptions="Center" FontSize="20"/>
+        <Entry x:Name="firstName" Placeholder="First Name"/>
+        <Entry x:Name="lastName" Placeholder="Last Name"/>
+        <Entry x:Name="idEntry" Placeholder="Email Address"/>
+        <Entry x:Name="cellNum" Placeholder="Cellphone Number" MaxLength="10"/>
+        <!--<Entry x:Name="oldpass" MaxLength="20" Placeholder="Enter your current password"/>
+        <Entry x:Name="newpass" Placeholder="Enter a new password"/>
+        <Entry x:Name="confirmpass" Placeholder="Confirm your new password"/>-->
+        <Frame Padding="10" HasShadow="False"/>
+        <Button x:Name="update" BackgroundColor="#7B7B7C" Clicked="updateInfo" TextColor="White" Text="Update" CornerRadius="10"/>
+        <Frame Padding="10" BackgroundColor="White" HasShadow="False"/>
+        <Button x:Name="changepassword" BackgroundColor="#7B7B7C" Clicked="changePass" TextColor="White" Text="Change Password" CornerRadius="10"/>
+    </StackLayout>
+        
+   
+</ContentPage>

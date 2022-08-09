@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White"
+    Shell.BackgroundColor="Black"
+    NavigationPage.HasBackButton="False"
+    x:Class="ParkingProject.UserPage" Title="User">
+    <StackLayout>
+        <Label x:Name="Identification" TextColor="Black"/>
+        <Label x:Name="Pass" TextColor="Black"/>
+        <Button x:Name="MakeRes" BackgroundColor="#7B7B7C" TextColor="White" Text="Make a Reservation" CornerRadius="10" WidthRequest="350" HorizontalOptions="Center" Clicked="clicked"/>
+        <Button x:Name="ManageSpot" Text="Manage Spot" Clicked="goToManageSpot"/>
+    </StackLayout>
+
+</ContentPage>

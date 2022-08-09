@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.ChangeRes" Title="Change Reservation">
+    <StackLayout Padding="10,70,10,0">
+        <Label Text="Select a Date and Time" FontSize="20" HorizontalOptions="Center" TextColor="Black"/>
+        <Frame Padding="20" HasShadow="False"/>
+        <DatePicker x:Name="date"/>
+        <Label Padding="10"/>
+        <TimePicker x:Name="time1" />
+        <Label Padding="10"/>
+        <TimePicker x:Name="time2"/>
+        <Label Padding="20"/>
+        <Button x:Name="search" Text="Search" Clicked="goToSpot"/>
+        
+
+    </StackLayout>
+</ContentPage>

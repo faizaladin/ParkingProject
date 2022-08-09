@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.Login" Title="Login">
+        <StackLayout Padding="10,110,10,0">
+            <Entry x:Name="idEntry" Placeholder="Please enter your email address" MaxLength="30"/>
+            <Entry x:Name="password" IsPassword="True" Placeholder="Please enter a password" MaxLength="20" />
+            <Label x:Name="message" HorizontalOptions="Center" FontSize="20"/>
+            <Button x:Name="login" BackgroundColor="#7B7B7C" TextColor="White" Text="Login" Clicked="checkLogin" CornerRadius="10"/>
+        </StackLayout>
+        
+  
+</ContentPage>

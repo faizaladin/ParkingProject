@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Xamarin.Plugin.Calendar.Controls;assembly=Xamarin.Plugin.Calendar"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.ManageSpot" Title="Manage my Spot">
+    <AbsoluteLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <Switch x:Name="freeSpot" Toggled="changePopup"/>
+            <Label x:Name="spotinfo" HorizontalTextAlignment="Center" FontSize="30" TextColor="Black"/>
+            <Label x:Name="test"/>
+            <ScrollView>
+            <StackLayout x:Name="currentReservations" IsVisible="false">
+            <Label x:Name="tester"/>
+             <ListView x:Name="ReservationView" HeightRequest="200" Margin="20,40,20,10" ItemsSource="{Binding _reservations}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                         <SwipeItem Text="Delete" BackgroundColor="Red" Invoked="OnDelete"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <Grid HeightRequest="60" WidthRequest="250" BackgroundColor="LightGray">
+                                    <Label Text="{Binding displayname}" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+                                </Grid>
+                            </SwipeView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+             </ListView>
+           </StackLayout>
+            </ScrollView>
+            <Button x:Name="linkspot" BackgroundColor="#7B7B7C" TextColor="White" Text="Link Spot" CornerRadius="10" WidthRequest="350" Clicked="goLink" HorizontalOptions="Center" IsVisible="false"/>
+        </StackLayout>
+         <ContentView x:Name="popupView" BackgroundColor="Transparent"  IsVisible="false">
+                <StackLayout>
+                    <Frame CornerRadius="10" Padding="10,0,0,0" BorderColor="LightGray">
+                        <StackLayout HeightRequest="500" WidthRequest="400" BackgroundColor="Gray">
+                            <controls:RangeSelectionCalendar x:Name="calendar" HeightRequest="300" ShowMonthPicker="False" FooterArrowVisible="False" SwipeUpToHideEnabled="False" ShowYearPicker="False" SwipeToChangeMonthEnabled="False"/>
+                            <Button x:Name="Available" Text="Make Available" Clicked="makeAvailable"/>
+                            <Button x:Name="Close" Text="Close" Clicked="closePopUp"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+        </ContentView>
+    </AbsoluteLayout>
+        
+</ContentPage>

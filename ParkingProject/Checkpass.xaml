@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.Checkpass">
+
+    <StackLayout Padding="10,10,10,0">
+        <Label x:Name="message" HorizontalOptions="Center" FontSize="20"/>
+        <Frame Padding="20" HasShadow="False"/>
+        <Entry x:Name="oldpass" MaxLength="20" IsPassword="True" Placeholder="Enter your current password"/>
+        <Frame Padding="50" HasShadow="False"/>
+        <Button x:Name="checkpass" BackgroundColor="#7B7B7C" Clicked="confirmpass" TextColor="White" Text="Confirm" CornerRadius="10"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.Waitlist" Title="Waitlist">
+     <StackLayout Padding="10,170,10,0">
+       <Label x:Name="message" HorizontalOptions="Center" FontSize="20"/>
+       <Button x:Name="joinWaitlist" Text="Join Waitlist" BackgroundColor="#7B7B7C" Clicked="join" TextColor="White" CornerRadius="10" />
+       <Label Padding="10"/>
+       <Button x:Name="removeWaitlist" Text="Remove from Waitlist" Clicked="remove" BackgroundColor="#7B7B7C" TextColor="White" CornerRadius="10"/>
+    </StackLayout>
+</ContentPage>

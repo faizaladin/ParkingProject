@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.LinkSpot" Title="Link Your Spot">
+    <StackLayout Padding="10,110,10,0">
+            <Label x:Name="message" HorizontalOptions="Center" FontSize="20"/>
+            <Entry x:Name="linkSpot" Placeholder="Enter your spot number" MaxLength="5"/>
+            <Frame Padding="20" HasShadow="False"/>
+            <Button x:Name="confirmSpot" BackgroundColor="#7B7B7C" TextColor="White" Clicked="giveSpot" Text="Link Spot" CornerRadius="10"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White"
+    Shell.BackgroundColor="Black"
+    x:Class="ParkingProject.SignupPage" Title="Sign Up">
+
+        <StackLayout Padding="10,10,10,0">
+            <Label x:Name="message" HorizontalOptions="Center" FontSize="20"/>
+            <Entry x:Name="firstName" Placeholder="Please enter your first name"/>
+            <Entry x:Name="lastName" Placeholder="Please enter your last name"/>
+            <Entry x:Name="idEntry" Placeholder="Please enter your email address"/>
+            <Entry x:Name="cellNum" Placeholder="Please enter your cell phone number" MaxLength="10"/>
+            <Entry x:Name="password" IsPassword="True" Placeholder="Please enter a password" MaxLength="20"/>
+            <Entry x:Name="confirmPassword" IsPassword="True" Placeholder="Please confirm your password"/>
+            <Frame Padding="10" HasShadow="False"/>
+            <Button x:Name="submit" BackgroundColor="#7B7B7C" TextColor="White" Text="Register" Clicked="addToDatabase" CornerRadius="10"/>
+            
+
+        </StackLayout>
+        
+</ContentPage>
